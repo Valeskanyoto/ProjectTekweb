@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+        }
+
+        /* Promo Bar */
+        .promo-bar {
+            background: black;
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Header Wrapper */
+        header {
+            background: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        /* Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            font-size: 16px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            opacity: 0.7;
+        }
+
+        /* Search Bar */
+        .search-container {
+            width: 400px;
+            position: relative;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            background: #f1f1f1;
+        }
+
+        /* Icons */
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            padding: 60px 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .hero-text button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .hero-image img {
+            width: 480px;
+            border-radius: 10px;
+        }
+
+/* Brand Strip Under Hero */
+.brand-strip {
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* jarak dari hero */
+}
+
+.brand-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.brand-list span {
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: "Times New Roman", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .brand-list span {
+        font-size: 24px;
+    }
+    .brand-list {
+        gap: 40px;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #868484;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero-text button {
+    background: black;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 500px;
+    border-radius: 12px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Promo Bar -->
+    <div class="promo-bar">
+        Sign up and get 20% off your first order. <strong>Sign Up Now</strong>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SHOP.CO</div>
+
+        <nav>
+            <ul>
+                <li>Shop ▼</li>
+                <li>On Sale</li>
+                <li>New Arrivals</li>
+                <li>Brands</li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search for products..." />
+        </div>
+
+        <div class="icons">
+            🛒
+            👤
+        </div>
+    </header>
+    <section class="hero">
+    <div class="hero-text">
+        <h1>
+            FIND CLOTHES<br>
+            THAT MATCHES<br>
+            YOUR STYLE
+        </h1>
+
+        <p>
+            Browse through our diverse range of meticulously crafted garments, designed 
+            to bring out your individuality and cater to your sense of style.
+        </p>
+
+        <button>Shop Now</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="your-image-here.jpg" alt="Fashion Model">
+    </div>
+</section>
+
+<section class="brand-strip">
+    <div class="brand-list">
+        <span>VERSACE</span>
+        <span>ZARA</span>
+        <span>GUCCI</span>
+        <span>PRADA</span>
+        <span>Calvin Klein</span>
+    </div>
+</section>
+
+
+</body>
+</html>
