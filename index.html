@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO | Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 380px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #888;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: .85;
+        }
+
+        .switch {
+            text-align: center;
+            color: #007bff;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGIN BOX -->
+    <div class="container" id="loginBox">
+        <h2>LOGIN</h2>
+
+        <input id="loginUser" placeholder="Username">
+        <input id="loginPass" type="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <div class="switch" onclick="openRegister()">Belum punya akun? Daftar di sini</div>
+    </div>
+
+    <!-- REGISTER BOX -->
+    <div class="container" id="registerBox" style="display:none;">
+        <h2>REGISTER</h2>
+
+        <input id="regUser" placeholder="Username">
+        <input id="regPass" type="password" placeholder="Password">
+        <select id="regRole">
+            <option value="pelanggan">Pelanggan</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <button onclick="register()">Buat Akun</button>
+
+        <div class="switch" onclick="openLogin()">Sudah punya akun? Login</div>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+
+</html>
